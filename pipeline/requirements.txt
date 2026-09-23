@@ -1,0 +1,11 @@
+torch
+torchvision
+transformers
+huggingface_hub
+Pillow
+numpy
+scipy
+astropy
+requests
+tqdm
+pyyaml
