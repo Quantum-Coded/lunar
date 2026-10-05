@@ -1,0 +1,16 @@
+# Direct, published evidence of water at the lunar south pole.
+# Coordinates and findings are transcribed from the cited papers, not computed.
+sites:
+  - id: lcross_cabeus
+    name: LCROSS Impact Site (Cabeus)
+    lat: -84.675
+    lon_east: 311.297
+    summary: >-
+      On 9 October 2009 NASA's LCROSS mission crashed a spent Centaur rocket stage into
+      this permanently shadowed part of Cabeus crater and flew through the debris plume.
+      Its instruments detected water vapour and ice in the ejecta.
+    facts:
+      - text: "Analysis of the plume found water ice at roughly 5.6 ± 2.9 % of the regolith mass."
+        source: "Colaprete, A. et al. (2010), Science 330, 463-468"
+      - text: "The impact site coordinates are 84.675°S, 48.703°W."
+        source: "Schultz, P. H. et al. (2010), Science 330, 468-472"

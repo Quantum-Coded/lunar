@@ -1,0 +1,9 @@
+# Generated / downloaded data (re-create with the pipeline)
+data/processed/
+data-pipeline/raw/
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/
+.next/
+deploy/space/

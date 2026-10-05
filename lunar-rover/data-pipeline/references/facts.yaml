@@ -1,0 +1,35 @@
+# Hand-written, cited facts attached to named features (keyed by IAU clean name).
+# Anything that can be measured from the data (depth, size, sunlight) is computed
+# by the pipeline instead - only context that no raster contains lives here.
+zone_facts:
+  - text: "The Moon's spin axis is tilted just 1.54° from vertical, so near the poles the Sun never climbs more than a degree or two above the horizon."
+    source: "IAU/IAG working group rotational elements for the Moon"
+features:
+  Shackleton:
+    - text: "Shackleton is roughly 21 km wide and 4.2 km deep, and its interior has been mapped by laser altimetry as one of the best candidate ice traps on the Moon."
+      source: "Zuber, M. T. et al. (2012), Nature 486, 378-381"
+    - text: "Its rim is lit for a large fraction of the lunar year, so a rover could sit in sunlight on the rim while looking down into endless shadow."
+      source: "Mazarico, E. et al. (2011), Icarus 211, 1066-1081"
+  Cabeus:
+    - text: "NASA's LCROSS probe struck Cabeus on 9 Oct 2009 and found water ice in the plume it kicked up."
+      source: "Colaprete, A. et al. (2010), Science 330, 463-468"
+    - text: "Parts of Cabeus are among the coldest places measured in the solar system, with temperatures near 40 K (about -233 °C)."
+      source: "Paige, D. A. et al. (2010), Science 330, 479-482"
+  Shoemaker:
+    - text: "In 1999 the Lunar Prospector spacecraft was deliberately crashed near here carrying a small capsule of Eugene Shoemaker's ashes - the only human remains on the Moon."
+      source: "NASA Lunar Prospector mission summary"
+  Haworth:
+    - text: "Haworth's floor is permanently shadowed and lies in one of NASA's Artemis III candidate landing regions."
+      source: "NASA Artemis III candidate landing regions, 2022"
+  Faustini:
+    - text: "Faustini's floor is permanently shadowed; its rim is an Artemis III candidate landing region."
+      source: "NASA Artemis III candidate landing regions, 2022"
+  Amundsen:
+    - text: "Amundsen's rim is an Artemis III candidate landing region."
+      source: "NASA Artemis III candidate landing regions, 2022"
+  Nobile:
+    - text: "Rim sites on Nobile were among the Artemis III candidate landing regions."
+      source: "NASA Artemis III candidate landing regions, 2022"
+  de Gerlache:
+    - text: "The rim of de Gerlache is an Artemis III candidate landing region."
+      source: "NASA Artemis III candidate landing regions, 2022"

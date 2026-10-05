@@ -1,0 +1,68 @@
+# Catalog of every real dataset used by the pipeline.
+# `file` is the name under data-pipeline/raw/. Nothing is invented: every
+# value shown in the app traces back to one of these products (or to the
+# hand-cited references in references/*.yaml).
+datasets:
+  dem:
+    title: LOLA south-polar digital elevation model (80 m/px, 80S-90S)
+    file: LDEM_80S_80MPP_ADJ.TIF
+    url: https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_80S_80MPP_ADJ.TIF
+    provider: NASA GSFC PGDA / LRO LOLA team
+    citation: "Barker, M. K. et al. (2021), Improved LOLA elevation maps for south pole landing sites, Planet. Space Sci. 203"
+    published: "Barker et al. 2021, distributed by NASA Goddard (PGDA)"
+    plain: "A height map of the Moon's south pole built from millions of laser pulses fired by the Lunar Orbiter Laser Altimeter (LOLA) on NASA's LRO spacecraft, which has orbited the Moon since 2009. One value every 80 m."
+    used_for: "The shape of the ground you drive on, slopes, and crater depths."
+  illumination:
+    title: LOLA average solar visibility, 75S-90S (120 m/px)
+    file: AVGVISIB_75S_120M_201608.TIF
+    url: https://pgda.gsfc.nasa.gov/data/MoonIllumination/AVGVISIB_75S_120M_201608.TIF
+    provider: NASA GSFC PGDA
+    citation: "Mazarico, E. et al. (2011), Illumination conditions of the lunar polar regions using LOLA topography, Icarus 211, 1066-1081"
+    scale: 0.00004
+    published: "NASA Goddard (PGDA) product version Aug 2016; method: Mazarico et al. 2011; LOLA data 2009-2013"
+    plain: "A map of how much of the time the Sun is above the horizon at each spot, computed from the LOLA height map and the Sun's motion over several years."
+    used_for: "The 'Avg. sunlight' read-out, the sunlit-site markers and the Sun layer on the GPS."
+  psr:
+    title: LOLA permanently shadowed regions, 75S-90S (120 m/px)
+    file: LPSR_75S_120M_201608.TIF
+    url: https://pgda.gsfc.nasa.gov/data/MoonIllumination/LPSR_75S_120M_201608.TIF
+    provider: NASA GSFC PGDA
+    citation: "Mazarico, E. et al. (2011), Icarus 211, 1066-1081"
+    published: "NASA Goddard (PGDA) product version Aug 2016; method: Mazarico et al. 2011"
+    plain: "A map of 'permanently shadowed regions' - places where the Sun never shines. Some are cold enough to hold water ice."
+    used_for: "Cold-trap markers, the Shadow layer, dark terrain and the rover headlamps."
+  craters:
+    title: Robbins Lunar Crater Database (2018)
+    file: lunar_crater_database_robbins_2018_bundle/data/lunar_crater_database_robbins_2018.csv
+    archive: lunar_crater_database_robbins_2018_bundle
+    url: https://astrogeology.usgs.gov/ckan/dataset/f89f5478-b69a-486c-b9b5-30d7b0c5ad2b/resource/c4f25cc2-4f8a-4207-a845-5e176da3ac5a/download/lunar_crater_database_robbins_2018
+    archive_name: robbins_2018.zip
+    provider: USGS Astrogeology / PDS
+    citation: "Robbins, S. J. (2019), A New Global Database of Lunar Impact Craters >1-2 km, JGR Planets 124, 871-892"
+    published: "Robbins 2018 database (USGS / NASA PDS); paper published 2019"
+    plain: "A catalogue of over 1.3 million lunar craters, with positions and sizes, compiled from LRO camera and laser data."
+    used_for: "Crater positions and diameters. Crater depth is measured by us from the height map."
+  nomenclature:
+    title: IAU Gazetteer of Planetary Nomenclature - Moon feature centre points
+    file: iau/MOON_nomenclature_center_pts.shp
+    archive: iau
+    url: https://asc-planetarynames-data.s3.us-west-2.amazonaws.com/MOON_nomenclature_center_pts.zip
+    archive_name: iau_moon.zip
+    provider: IAU / USGS Astrogeology Science Center
+    citation: "IAU Working Group for Planetary System Nomenclature, planetarynames.wr.usgs.gov"
+    published: "IAU Gazetteer, continuously updated; snapshot downloaded 4 Oct 2026"
+    plain: "The official list of names the International Astronomical Union has approved for lunar features, with the story behind each name."
+    used_for: "Feature names and the 'Named for' notes."
+
+# Published findings quoted in the app's information cards (not downloaded - transcribed with citations).
+extra_credits:
+  - title: LCROSS water detection at Cabeus crater
+    provider: NASA LCROSS mission
+    published: "Colaprete et al. 2010; Schultz et al. 2010 (Science 330)"
+    plain: "In 2009 NASA crashed a rocket stage into Cabeus crater and measured water ice in the debris."
+    used_for: "The only place marked as confirmed water."
+  - title: Hand-written cited facts
+    provider: various, cited on each card
+    published: "see each card"
+    plain: "Short facts such as Shackleton's depth or Shoemaker's ashes, each with its source."
+    used_for: "The 'Did you know' boxes."
