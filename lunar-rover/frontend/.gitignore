@@ -1,0 +1,7 @@
+.next/
+node_modules/
+next-env.d.ts
+.env.local
+tsconfig.tsbuildinfo
+AGENTS.md
+CLAUDE.md
