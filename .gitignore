@@ -58,3 +58,5 @@ Thumbs.db
 *.tsbuildinfo
 next-env.d.ts
 .vercel/
+
+lunar-rover/docs/linkedin-post.md

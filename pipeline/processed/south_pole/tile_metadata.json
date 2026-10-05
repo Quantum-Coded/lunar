@@ -1,8 +1,0 @@
-{
-  "region": "south_pole_shackleton",
-  "lat": -89.9,
-  "lon": 0.0,
-  "sun_elevation_deg": 1.377340335969971,
-  "tile_size": 256,
-  "num_bands": 8
-}
