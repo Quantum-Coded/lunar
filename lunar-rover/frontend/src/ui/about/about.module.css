@@ -1,0 +1,30 @@
+/* Layout and type follow the supplied design brief: black canvas, white uppercase display type, hairlines, ghost pills. */
+.page { max-width: 1000px; margin: 0 auto; padding: 32px 24px 96px; line-height: 1.7; letter-spacing: 0.32px; color: #f0f0fa; background: #000; height: 100dvh; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; scrollbar-width: none; }
+.page::-webkit-scrollbar { display: none; }
+.page h1 { font-size: clamp(40px, 9vw, 80px); line-height: 0.95; letter-spacing: 1.6px; text-transform: uppercase; font-weight: 700; margin: 40px 0 20px; color: #fff; }
+.page h2 { font-size: clamp(24px, 4.4vw, 40px); line-height: 1.15; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; margin: 64px 0 16px; color: #fff; }
+.page h3 { font-size: 16px; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; margin: 0 0 6px; color: #fff; }
+.page p, .page li { font-size: 16px; }
+.page a { color: #fff; text-decoration: underline; margin-right: 16px; }
+.nav { margin-bottom: 8px; }
+.page a.back { display: inline-flex; align-items: center; gap: 10px; padding: 16px 24px; border-radius: 32px; border: 1px solid #fff; color: #fff; text-decoration: none; font-size: 13px; font-weight: 700; letter-spacing: 1.17px; text-transform: uppercase; transition: background 0.2s, color 0.2s; }
+.page a.back:hover { background: #f0f0fa; color: #000; }
+.lead { font-size: 18px !important; max-width: 760px; }
+.disclaimer { border: 1px solid #fff; border-radius: 8px; padding: 4px 24px 12px; margin-top: 48px; background: #0a0a0a; }
+.disclaimer h2 { margin-top: 20px; }
+.realList { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.realList li { background: #0a0a0a; border: 1px solid #3a3a3f; border-radius: 8px; padding: 14px 18px; display: flex; flex-direction: column; gap: 4px; }
+.realList small { color: #a9a9b3; font-size: 14px; letter-spacing: 0.2px; }
+.real, .fake { align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: 0.96px; text-transform: uppercase; padding: 3px 10px; border-radius: 32px; }
+.real { background: #fff; color: #000; }
+.fake { border: 1px solid #fff; color: #fff; }
+.dataset { background: #0a0a0a; border: 1px solid #3a3a3f; border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; }
+.dataset p { margin: 6px 0 12px; }
+.dataset dl { display: grid; grid-template-columns: 120px 1fr; gap: 6px 14px; font-size: 14px; margin: 0 0 10px; }
+.dataset dt { color: #a9a9b3; text-transform: uppercase; font-size: 11px; letter-spacing: 0.96px; padding-top: 3px; }
+.dataset dd { margin: 0; color: #fff; }
+.limits { color: #a9a9b3; font-size: 14px !important; }
+.developer { margin-top: 72px; padding-top: 8px; border-top: 1px solid #3a3a3f; }
+@media (max-width: 600px) { .dataset dl { grid-template-columns: 1fr; gap: 0; } .dataset dt { margin-top: 6px; } }
+.credits { padding-left: 18px; }
+.credits small { color: #a9a9b3; }
