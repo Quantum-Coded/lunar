@@ -1,8 +1,8 @@
 # 🌑 LunarGPS: Google Maps for the Moon
 
-Drive a 3D rover across the **real lunar south pole**, with a phone-style GPS built entirely from NASA data. Search for water ice, craters and sunlit sites, get a route, and drive there.
+![Driving the rover across the lunar south pole while the GPS tracks nearby craters and sunlit sites](assets/demo.gif)
 
-<!-- Add a demo GIF here: ![LunarGPS demo](docs/demo.gif) -->
+Drive a 3D rover across the **real lunar south pole**, with a phone-style GPS built entirely from NASA data. Search for water ice, craters and sunlit sites, get a route, and drive there.
 
 ## What it does
 
