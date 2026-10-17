@@ -23,7 +23,7 @@ You need free accounts on **GitHub**, **Hugging Face** and **Vercel** (R2 is opt
 
 ## 0. Before you start: credits and licence
 
-- Open `frontend/src/lib/credits.ts` and fill in the **author and licence of the rover 3D model**. Do not publish without it.
+- The rover is NASA's Space Exploration Vehicle model, credited in `frontend/src/lib/credits.ts`. Keep that credit if you swap models.
 - Add your own `LICENSE` file (MIT is a common choice for the code). NASA/USGS/IAU data keep their own terms; see the About page.
 - Edit `frontend/src/lib/developer.ts` with your real bio and links.
 
@@ -108,7 +108,7 @@ Free R2 allowances (10 GB storage, 1 M writes and 10 M reads per month) comforta
 
 ## 6. Pre-launch checklist
 
-- [ ] Rover model credit and licence filled in (`credits.ts`).
+- [ ] Rover model credit present in `credits.ts`.
 - [ ] `LUNAR_CORS_ORIGINS` is the exact Vercel/custom-domain origin, not `*`.
 - [ ] `/docs` returns 404 on the Space (`LUNAR_ENABLE_DOCS=false`).
 - [ ] No tokens or `.env.local` files committed (`git status` is clean of secrets).
@@ -125,7 +125,7 @@ Free R2 allowances (10 GB storage, 1 M writes and 10 M reads per month) comforta
 | Console: "violates Content Security Policy" | The API/tile URL in the Vercel env vars differs from the one the browser calls; fix the env var and redeploy. |
 | Push to the Space is rejected for large files | Run `git lfs install` before `git add`; make sure `.gitattributes` is committed. |
 | HTTP 429 from the API | The rate limiter protects route planning (20/min per visitor by default). Raise it with `LUNAR_ROUTE_RATE_LIMIT='[60, 60]'` if needed. |
-| Rover model or textures 404 | The `frontend/public/models/` folder must be committed. |
+| Rover model 404 | `frontend/public/models/nasa-space-exploration-vehicle.glb` must be committed. |
 
 ## Alternatives
 

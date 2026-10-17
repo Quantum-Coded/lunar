@@ -79,4 +79,4 @@ and the interactive API docs can be disabled (`LUNAR_ENABLE_DOCS=false`). See [d
 - Terrain is 80 m/px: smooth at rover scale. Slope hazards are derived at that scale and understate rock-level risk.
 - "Cold trap" means permanently shadowed — ice is a candidate there, not confirmed (only the LCROSS site is marked confirmed).
 - The pipeline downloads data over HTTPS but does not verify checksums.
-- The rover model is a third-party asset: add its author and licence in `frontend/src/lib/credits.ts`.
+- The rover is NASA's Space Exploration Vehicle model from [NASA-3D-Resources](https://github.com/nasa/NASA-3D-Resources), credited in `frontend/src/lib/credits.ts`.

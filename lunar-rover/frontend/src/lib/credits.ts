@@ -7,7 +7,7 @@ export interface Credit {
 }
 
 export const credits: Credit[] = [
-  { name: "Moon rover 3D model", what: "The rover you drive (OBJ model and textures)", licence: "Third-party asset - credit the author and licence in this file before publishing" },
+  { name: "Space Exploration Vehicle 3D model (NASA)", what: "The rover you drive: NASA's Lunar Electric Rover concept, simplified for the web", licence: "NASA media usage guidelines (no endorsement implied)", url: "https://github.com/nasa/NASA-3D-Resources" },
   { name: "Three.js", what: "3D rendering", licence: "MIT", url: "https://threejs.org" },
   { name: "React Three Fiber", what: "React renderer for Three.js", licence: "MIT", url: "https://r3f.docs.pmnd.rs" },
   { name: "Next.js and React", what: "Web framework", licence: "MIT", url: "https://nextjs.org" },
